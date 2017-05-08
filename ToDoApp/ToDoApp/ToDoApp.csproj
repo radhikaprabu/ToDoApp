@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CreateToDoDatabase.cs" />
+    <Compile Include="FileSQLInterface.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -47,6 +48,9 @@
       <DependentUpon>ToDoAppPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ToDoItem.cs" />
+    <Compile Include="ToDoItemPage.xaml.cs">
+      <DependentUpon>ToDoItemPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -94,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ToDoAppPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToDoItemPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
