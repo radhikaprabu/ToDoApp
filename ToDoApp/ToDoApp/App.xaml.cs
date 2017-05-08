@@ -9,12 +9,15 @@ namespace ToDoApp
 {
     public partial class App : Application
     {
+        static CreateToDoDatabase database;
         public App()
         {
-            InitializeComponent();
+            
 
             MainPage = new ToDoApp.MainPage();
         }
+
+
 
         protected override void OnStart()
         {
